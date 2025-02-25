@@ -29,6 +29,13 @@ body {
     margin: 0;
     font-size: 18px;
     line-height: 1.5;
+    /* background stuff */
+    background-image: url("img/background.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    backdrop-filter: blur(5px); /* blurry background */
 }
 
 /* header section */
@@ -83,6 +90,22 @@ header {
 #home-title {
     font-size: 150%;
     font-weight: bolder;
+    font-style: italic;
+    background-color: var(--tertiary-color);
+    border: 10px solid var(--red-color);
+    border-radius: 5px;
+    width: 70%;
+    text-align: center;
+
+}
+
+.home-container-title {
+    font-size: 120%;
+    font-weight: bolder;
+}
+
+p {
+    margin: 5px; /* this is to make paragraphs smoother */
 }
 
 .home-container {
@@ -97,3 +120,42 @@ header {
     border-radius: 5px;
     width: 500px;
 }
+
+/* handle the footing and github links */
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+    width: 100%;
+    position: relative;
+    bottom:0;
+    left: 0;
+    color: var(--black-color);
+    margin-top: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--red-color);
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--secondary-color);
+    transition: 0.2s;
+}
+
+.github-link {
+    height: 20px;
+}
+
+.github-link:hover {
+    filter: invert(100%);
+    transition: 0.2s;
+}
+
