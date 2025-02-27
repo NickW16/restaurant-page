@@ -30,7 +30,7 @@ export function createMenuContent () {
         titleElement.innerHTML = title; // set title content
     
         let textElement = document.createElement('div');
-        textElement.classList.add('home-container-text');
+        textElement.classList.add('menu-container-text');
         textElement.innerHTML = text; // set text content
 
         textContainer.append(titleElement, textElement);

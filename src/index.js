@@ -20,8 +20,10 @@ menuButton.addEventListener("click", () => {
     fullContent.appendChild(createMenuContent());
 });
 
+// contact button functionality
 let contactButton = document.getElementById('contact-button');
 contactButton.addEventListener("click", () => {
     fullContent.innerHTML = "";
     fullContent.appendChild(createContactContent());
-})
+});
+
