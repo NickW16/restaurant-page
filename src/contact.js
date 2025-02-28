@@ -1,3 +1,5 @@
+import outside from "./img/outside-view.png";
+
 export function createContactContent () {
     let fullContent = document.createElement('div');
     fullContent.id = "content";
@@ -39,6 +41,12 @@ export function createContactContent () {
     contactContainer("<p>Chef 👨‍🍳</p>", "<p><a>111-111-1111</a></p>");
     contactContainer("<p>Manager 🧑‍💼</p>", "<p><a>222-222-2222</a></p>");
     contactContainer("<p>#1 Costumer 🥇</p>", "<p><a>333-333-333</a></p>");
+
+    let imageElement = document.createElement('img');
+    imageElement.classList.add('contact-image');
+    imageElement.src = outside;
+
+    fullContent.append(imageElement);
 
     return fullContent;
 };

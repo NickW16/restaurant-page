@@ -1,6 +1,9 @@
 import onionSoup from "./img/onion-soup.png";
 import escargots from "./img/escargots.png";
 import coq from "./img/coq-au-vin.png";
+import beef from "./img/beef-bourguignon.png";
+import rata from "./img/ratatouille.png";
+import creme from "./img/creme-brulee.png";
 
 export function createMenuContent () {
     let fullContent = document.createElement('div');
@@ -54,7 +57,15 @@ export function createMenuContent () {
     fullContent.append(mainCoursesTitle); // main courses menu
 
     menuContainer("<p>$22 - Coq au Vin</p>", coq, "<p>Slow-cooked chicken in a rich red wine sauce with mushrooms and lardons. 🍷</p>");
+    menuContainer("<p>$24 - Bœuf Bourguignon</p>", beef, "<p>Tender beef stew simmered in red wine with carrots and pearl onions. 🥩🥕</p>");
+    menuContainer("<p>$18 - Ratatouille</p>", rata, "<p>A classic Provençal dish of slow-cooked vegetables in a tomato base. 🍆🍅</p>");
 
+    let dessertsTitle = document.createElement('div');
+    dessertsTitle.classList.add('menu-sections-title') // assigns a class
+    dessertsTitle.innerHTML = "<p>Dessert</p>";
+    fullContent.append(dessertsTitle); // main courses menu
+
+    menuContainer("<p>$8 - Crème Brûlée</p>", creme, "<p>A classic French dessert with a rich vanilla custard base, topped with a caramelized sugar crust. 🔥🍮</p>");
 
     return fullContent;
 };
