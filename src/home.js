@@ -39,7 +39,7 @@ export function createHomeContent() {
     commentAuthor.classList.add('commentAuthor');
     
     commentary.innerHTML = `<q>This restaurant is so awesome, I've visited it many times and have always felt welcome there! And the dishes are the best available in the region... for a fair price!</q>`;
-    commentAuthor.textContent = "- Anonymous #1 costumer ❤️";
+    commentAuthor.textContent = "- Anonymous #1 customer ❤️";
     commentBox.append(commentary, commentAuthor);
     fullContent.append(commentBox);
     
